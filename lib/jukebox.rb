@@ -25,5 +25,5 @@ end
 def play(library)
   puts "Please enter a song name or number:"
   input = gets.strip
-  songs.i
+  songs.includ
 end
