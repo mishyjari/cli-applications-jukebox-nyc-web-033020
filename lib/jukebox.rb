@@ -28,7 +28,7 @@ def play(library)
   if library.include?(input)
     puts "Playing #{input}"
   elsif input.to_i <= library.length
-    puts "Playing #{library[input.to_i + 1]}"
+    puts "Playing #{library[input.to_i - 1]}"
   else
     puts "Invalid Input, please try again"
     play(library)
