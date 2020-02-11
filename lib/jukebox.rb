@@ -19,5 +19,11 @@ def help
 end
 
 def list(library)
-  library.each_with_index{|val,i|
+  library.each_with_index{ |val,i| puts "#{i+1}. #{val}" }
+end
+
+def play(library)
+  puts "Please enter a song name or number:"
+  input = gets.strip
+  
 end
