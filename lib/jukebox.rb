@@ -30,7 +30,7 @@ def play(library)
   elsif input.to_i <= library.length
     puts "Playing #{library[input.to_i - 1]}"
   else
-    puts "Invalid Input, please try again"
+    puts "Invalid input, please try again"
     play(library)
   end
 end
