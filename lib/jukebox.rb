@@ -28,7 +28,7 @@ def play(library)
   if library.each{ | title | title.include?(input) }
     puts "Playing #{input}"
   elsif input <= library.length && input > 0
-    puts "Playing #{library[input + 1]}"
+    puts "Playing #{library[input]}"
   else
     puts "Invalid Input, please try again"
     play(library)
