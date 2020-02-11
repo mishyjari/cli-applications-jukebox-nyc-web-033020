@@ -27,7 +27,7 @@ def play(library)
   input = gets.strip
   if library.include?(input)
     puts "Playing #{input}"
-  elsif input <= library.length && input > 0
+  elsif input <= library.length && input.is_a? Integer
     puts "Playing #{library[input]}"
   else
     puts "Invalid Input, please try again"
