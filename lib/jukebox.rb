@@ -27,7 +27,7 @@ def play(library)
   input = gets.strip
   if library.each{ | title | title.include?(input) }
     puts "Playing #{input}"
-  elsif input < library.length
+  elsif input <= library.length && input > 0
     puts library[input + 1]
   else
     puts "Invalid Input, please try again"
