@@ -25,7 +25,7 @@ end
 def play(library)
   puts "Please enter a song name or number:"
   input = gets.strip
-  if library.each{ | title | title.include? input }
+  if library.include?(input)
     puts "Playing #{input}"
   elsif input <= library.length && input > 0
     puts "Playing #{library[input]}"
