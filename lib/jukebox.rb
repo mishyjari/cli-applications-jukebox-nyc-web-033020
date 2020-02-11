@@ -19,5 +19,5 @@ def help
 end
 
 def list(library)
-  
+  library.each_with_index{|val,i|
 end
