@@ -25,5 +25,16 @@ end
 def play(library)
   puts "Please enter a song name or number:"
   input = gets.strip
-  if songs.
+  if library.each{ | title | title.include?(input) }
+    puts "Playing #{input}"
+  elsif input < library.length
+    puts library[input + 1]
+  else
+    puts "Invalid Input, please try again"
+    play(library)
+  end
+end
+
+def exit_jukebox
+  puts "Goodbye"
 end
